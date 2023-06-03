@@ -14,15 +14,25 @@ import {
   mongodb,
   git,
   figma,
+  flutter,
+  csharp,
   docker,
   meta,
   starbucks,
   tesla,
   shopify,
   carrent,
+  status_q,
   jobit,
   tripguide,
   threejs,
+  fiver,
+  playstore,
+  mobios,
+  dcp_mobile_apps,
+  mobile_notekeeper,
+  nic_decorder,
+  wallart_gallery,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +64,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Mobile App Developer",
     icon: creator,
   },
 ];
@@ -109,59 +119,49 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "flutter",
+    icon: flutter,
+  },
+  {
+    name: "csharp",
+    icon: csharp,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Freelance Web Developer",
+    company_name: "Fiveer | Upwork | Truelancer",
+    icon: fiver,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Oct 2018 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing web applications using React.js and other related technologies.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Node.js and SpringBoot backend application development with REST API implementations.",
+      "Developing mobile applications using React Native.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Mobile App Developer and Publisher",
+    company_name: "Play Store",
+    icon: playstore,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aprill 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining native mobile applications using Java, Android and other related technologies.",
+      "Developing and maintaining cross-platform mobile applications using Flutter and React Native.",
+      "Mobile Game Development using Unity.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Associate Software Engineer Intern",
+    company_name: "mobiOs Private Limited",
+    icon: mobios,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Sep 2022 - Feb 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Web application frontend development using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -198,9 +198,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "StatusQ",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to run social media advertisement campaigns and earn money by participationg others advertisement campaigns.",
     tags: [
       {
         name: "react",
@@ -211,45 +211,49 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "node",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: status_q,
+    source_code_link: "https://github.com/DininduChamikara/StatusQ-FE-latest",
+  },
+  {
+    name: "Mobile NoteKeeper App",
+    description:
+      "A mobile application that can manage all your notes with the capabilities of basic CRUD for notes as well.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Android Studio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Android",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: mobile_notekeeper,
+    source_code_link: "https://github.com/DininduChamikara/NoteKeeper-App",
   },
   {
-    name: "Job IT",
+    name: "DCP mobile Apps website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Static website for DCP mobile Apps with the capability of getting user responses through emails.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "emailjs",
         color: "green-text-gradient",
       },
       {
@@ -257,8 +261,47 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: dcp_mobile_apps,
+    source_code_link:
+      "https://github.com/DininduChamikara/dcp-mobile-apps-official",
+  },
+  {
+    name: "Sri Lanka NIC Decoder",
+    description:
+      "A mobile application that can find hidden NIC information using NIC number.",
+    tags: [
+      {
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Android Studio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Android",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nic_decorder,
+    source_code_link: "https://github.com/DininduChamikara/Sri-Lanka-Nic-Decorder",
+  },
+  {
+    name: "WallArt Gallery",
+    description:
+      "A mobile application which is providing you various kinds of attractive wallpapers for your mobile screen.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dart",
+        color: "green-text-gradient",
+      },
+    ],
+    image: wallart_gallery,
+    source_code_link: "https://github.com/DininduChamikara/WallArtGallery",
   },
 ];
 
