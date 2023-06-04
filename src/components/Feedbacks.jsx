@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -5,6 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const FeedBackCard = ({
   index,
   testimonial,
@@ -40,6 +42,7 @@ const FeedBackCard = ({
   </motion.div>
 );
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Feedbacks = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
@@ -60,4 +63,5 @@ const Feedbacks = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default SectionWrapper (Feedbacks, "");

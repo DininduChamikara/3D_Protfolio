@@ -1,10 +1,12 @@
-import React, {Suspense} from 'react';
-import { Canvas } from '@react-three/fiber';
+/* eslint-disable react/no-unknown-property */
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { Suspense } from 'react';
 
 import CanvasLoader from '../Loader';
 
 const Ball = (props) => {
+  // eslint-disable-next-line react/prop-types
   const [decal] = useTexture([props.imgUrl]);
 
   return (
@@ -29,6 +31,7 @@ const Ball = (props) => {
   )
 }
 
+// eslint-disable-next-line react/prop-types
 const BallCanvas = ({icon}) => {
   return (
     <Canvas

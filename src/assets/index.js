@@ -41,6 +41,8 @@ import dcp_mobile_apps from "./dcp_mobile_apps.png";
 import mobile_notekeeper from "./mobile_notekeeper.png";
 import nic_decorder from "./nic_decorder.png";
 import wallart_gallery from "./wallart_gallery.png";
+import kavindu_ravishan from "./kavindu_ravishan.jpg";
+import chanuka_akash from "./chanuka_akash.jpg";
 
 export {
   logo,
@@ -82,5 +84,7 @@ export {
   dcp_mobile_apps,
   mobile_notekeeper,
   nic_decorder,
-  wallart_gallery
+  wallart_gallery,
+  kavindu_ravishan,
+  chanuka_akash,
 };
