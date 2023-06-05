@@ -6,7 +6,7 @@ import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
 export default defineConfig({
   plugins: [react(), chunkSplitPlugin()],
   //Dinindu test adding
-  build: {
-    chunkSizeWarningLimit: 1600,
-  },
+  // build: {
+  //   chunkSizeWarningLimit: 1600,
+  // },
 });
