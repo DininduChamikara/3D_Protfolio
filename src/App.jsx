@@ -6,12 +6,13 @@ import {
   Feedbacks,
   Hero,
   Navbar,
+  StarsCanvas,
   Tech,
   Works,
-  StarsCanvas,
 } from "./components";
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">

@@ -1,40 +1,31 @@
 import {
-  mobile,
   backend,
+  chanuka_akash,
   creator,
-  web,
-  javascript,
-  typescript,
-  html,
+  csharp,
   css,
+  dcp_mobile_apps,
+  fiver,
+  flutter,
+  git,
+  html,
+  javascript,
+  kavindu_ravishan,
+  mobile,
+  mobile_notekeeper,
+  mobios,
+  mongodb,
+  nic_decorder,
+  nodejs,
+  playstore,
   reactjs,
   redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  flutter,
-  csharp,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
   status_q,
-  jobit,
-  tripguide,
+  tailwind,
   threejs,
-  fiver,
-  playstore,
-  mobios,
-  dcp_mobile_apps,
-  mobile_notekeeper,
-  nic_decorder,
+  typescript,
   wallart_gallery,
-  kavindu_ravishan,
-  chanuka_akash,
+  web
 } from "../assets";
 
 export const navLinks = [
@@ -115,10 +106,6 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "flutter",
@@ -307,4 +294,5 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };
+
