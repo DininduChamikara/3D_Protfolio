@@ -31,9 +31,9 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          {/* <div className="hidden sm:block"> */}
-          <Tech />
-          {/* </div> */}
+          <div className="hidden sm:block">
+            <Tech />
+          </div>
           <Works />
           <Feedbacks />
           <div className="relative z-0">
