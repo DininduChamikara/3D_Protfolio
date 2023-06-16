@@ -2,11 +2,11 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({isMobile}) => {
+const Computers = ({ isMobile }) => {
   const gamingDesktop = useGLTF("./gaming_desktop_pc/scene.gltf");
   return (
     <mesh>
@@ -72,6 +72,6 @@ Computers.propTypes = {
   isMobile: PropTypes.bool,
   hemisphereLight: PropTypes.object,
   pointLight: PropTypes.object,
-}
+};
 
 export default ComputersCanvas;
