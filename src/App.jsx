@@ -13,34 +13,37 @@ import {
 import { useState } from "react";
 
 const App = () => {
-
   const [isFullyLoaded, setIsFullyLoaded] = useState(false);
 
-  window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');
+  window.addEventListener("load", (event) => {
+    console.log("page is fully loaded");
     setIsFullyLoaded(true);
   });
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeate bg-center">
-          <Navbar />
-          <Hero />
-          {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
-        </div>
-        <About />
-        <Experience />
-        {/* <div className="hidden sm:block"> */}
+      {isFullyLoaded ? (
+        <div className="relative z-0 bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeate bg-center">
+            <Navbar />
+            <Hero />
+            {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
+          </div>
+          <About />
+          <Experience />
+          {/* <div className="hidden sm:block"> */}
           <Tech />
-        {/* </div> */}
-        <Works />
-        <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
+          {/* </div> */}
+          <Works />
+          <Feedbacks />
+          <div className="relative z-0">
+            <Contact />
+            <StarsCanvas />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div>Loading...</div>
+      )}
     </BrowserRouter>
   );
 };
