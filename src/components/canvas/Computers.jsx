@@ -2,12 +2,11 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import PropTypes from 'prop-types'
 
 import CanvasLoader from "../Loader";
 
-// eslint-disable-next-line react/prop-types
 const Computers = ({isMobile}) => {
-  // const computer = useGLTF("./desktop_pc/scene.gltf");
   const gamingDesktop = useGLTF("./gaming_desktop_pc/scene.gltf");
   return (
     <mesh>
@@ -22,7 +21,6 @@ const Computers = ({isMobile}) => {
         shadow-mapSize-width={1024}
       />
       <primitive
-        // object={computer.scene}
         object={gamingDesktop.scene}
         scale={isMobile ? 0.7 : 0.7}
         position={isMobile ? [0, -3, -2.2] : [0, -3.5, -1.5]}
@@ -69,5 +67,11 @@ const ComputersCanvas = () => {
     </Canvas>
   );
 };
+
+Computers.propTypes = {
+  isMobile: PropTypes.bool,
+  hemisphereLight: PropTypes.object,
+  pointLight: PropTypes.object,
+}
 
 export default ComputersCanvas;

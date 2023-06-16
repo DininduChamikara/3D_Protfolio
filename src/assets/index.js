@@ -10,8 +10,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -25,17 +23,10 @@ import threejs from "./tech/threejs.svg";
 import flutter from "./tech/flutter.svg";
 import csharp from "./tech/csharp.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import fiver from "./company/fiverr.png";
 import playstore from "./company/playstore.png";
 import mobios from "./company/mobios.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import status_q from "./status_q.png";
 import dcp_mobile_apps from "./dcp_mobile_apps.png";
 import mobile_notekeeper from "./mobile_notekeeper.png";
@@ -56,8 +47,6 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
   git,
   html,
   javascript,
@@ -70,16 +59,9 @@ export {
   threejs,
   flutter,
   csharp,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   fiver,
   playstore,
   mobios,
-  carrent,
-  jobit,
-  tripguide,
   status_q,
   dcp_mobile_apps,
   mobile_notekeeper,
