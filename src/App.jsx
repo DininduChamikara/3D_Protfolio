@@ -27,13 +27,10 @@ const App = () => {
           <div className="bg-hero-pattern bg-cover bg-no-repeate bg-center">
             <Navbar />
             <Hero />
-            {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
           </div>
           <About />
           <Experience />
-          <div className="hidden sm:block">
             <Tech />
-          </div>
           <Works />
           <Feedbacks />
           <div className="relative z-0">
@@ -46,10 +43,10 @@ const App = () => {
           <div className="bg-hero-pattern bg-cover bg-no-repeate bg-center">
             <Navbar />
             <Hero />
-            {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
           </div>
           <About />
           <Experience />
+          {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
           <Works />
           <Feedbacks />
           <div className="relative z-0">
