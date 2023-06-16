@@ -13,9 +13,10 @@ const Stars = (props) => {
   });
 
   return (
-    // eslint-disable-next-line react/no-unknown-property
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+      <Points ref={ref} 
+      // positions={sphere} 
+      stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
           color="#f272c8"
