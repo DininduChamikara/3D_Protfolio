@@ -11,6 +11,7 @@ import {
   Works,
 } from "./components";
 import { useState } from "react";
+import SpanningLoader from "./components/SpanningLoader";
 
 const App = () => {
   const [isFullyLoaded, setIsFullyLoaded] = useState(false);
@@ -30,7 +31,8 @@ const App = () => {
           </div>
           <About />
           <Experience />
-            <Tech />
+          <SpanningLoader />
+          <Tech />
           <Works />
           <Feedbacks />
           <div className="relative z-0">
@@ -46,7 +48,7 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
+          {isFullyLoaded && <SpanningLoader />}
           <Works />
           <Feedbacks />
           <div className="relative z-0">
