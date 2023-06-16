@@ -12,7 +12,6 @@ import {
 } from "./components";
 
 const App = () => {
-
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -20,16 +19,17 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Works/>
-        <Feedbacks/>
-        <div className="relative z-0">
-          <Contact/>
-          <StarsCanvas/>
+        <About />
+        <Experience />
+        <div className="hidden sm:block">
+          <Tech />
         </div>
-
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
     </BrowserRouter>
   );
