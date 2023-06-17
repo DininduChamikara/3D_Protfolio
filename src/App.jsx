@@ -31,7 +31,6 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          <SpanningLoader />
           <Tech />
           <Works />
           <Feedbacks />
@@ -48,7 +47,7 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          {isFullyLoaded && <SpanningLoader />}
+          <SpanningLoader />
           <Works />
           <Feedbacks />
           <div className="relative z-0">
