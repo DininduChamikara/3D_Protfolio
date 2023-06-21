@@ -11,6 +11,7 @@ import {
   Works,
 } from "./components";
 import { useState } from "react";
+import SpanningLoader from "./components/SpanningLoader";
 
 const App = () => {
   const [isFullyLoaded, setIsFullyLoaded] = useState(false);
@@ -27,13 +28,10 @@ const App = () => {
           <div className="bg-hero-pattern bg-cover bg-no-repeate bg-center">
             <Navbar />
             <Hero />
-            {isFullyLoaded ? <div>Loaded</div> : <div>Loading...</div>}
           </div>
           <About />
           <Experience />
-          {/* <div className="hidden sm:block"> */}
           <Tech />
-          {/* </div> */}
           <Works />
           <Feedbacks />
           <div className="relative z-0">
@@ -42,7 +40,20 @@ const App = () => {
           </div>
         </div>
       ) : (
-        <div>Loading...</div>
+        <div className="relative z-0 bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeate bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Experience />
+          <SpanningLoader />
+          <Works />
+          <Feedbacks />
+          <div className="relative z-0">
+            <Contact />
+          </div>
+        </div>
       )}
     </BrowserRouter>
   );
