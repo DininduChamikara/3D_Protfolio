@@ -43,10 +43,14 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
+        {/* error here */}
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          {/* <h3 className="text-white font-bold text-[24px]">{name}</h3> */}
+          <h3 className="text-white font-bold text-base sm:text-16 md:text-24">{name}</h3>
+          {/* <p className="mt-2 text-secondary text-[14px]">{description}</p> */}
+          <p className="hidden sm:block mt-2 text-secondary text-base sm:text-10 md:text-14">{description}</p>
         </div>
+        {/* error here */}
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
