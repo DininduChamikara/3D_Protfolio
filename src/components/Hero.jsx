@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import CV_DownloadBtn from "./CV_DownloadBtn";
 
 const Hero = () => {
   return (
@@ -23,6 +24,12 @@ const Hero = () => {
             applications and mobile applications
           </p>
         </div>
+      </div>
+
+      <div
+        className={`${styles.paddingX} sm:hidden absolute inset-0 top-[350px] justify-center max-w-7xl mx-auto flex flex-row items-start gap-5`}
+      >
+        <CV_DownloadBtn />
       </div>
 
       <div className="hidden sm:block relative w-full h-screen mx-auto">
