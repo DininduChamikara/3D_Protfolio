@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { close, d_logo_2, menu } from "../assets";
 import { navLinks } from "../constants";
 import { styles } from "../styles";
+import CV_DownloadBtn from "./CV_DownloadBtn";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,7 +27,7 @@ const Navbar = () => {
             <span className="sm:block hidden">| Full Stack Developer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -38,6 +39,7 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <CV_DownloadBtn />
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
