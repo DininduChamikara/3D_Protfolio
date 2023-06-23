@@ -39,7 +39,9 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <CV_DownloadBtn />
+          <div className="hidden lg:block">
+            <CV_DownloadBtn />
+          </div>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
