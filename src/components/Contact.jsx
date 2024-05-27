@@ -27,32 +27,40 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(
-      'service_bs149tk',
-      'template_pbsf9uq',
-      {
-        from_name: form.name,
-        to_name: 'Dinindu',
-        from_email: form.email,
-        to_email: 'dininduchamikara1999@gmail.com',
-        message: form.message,
-      },
-      'Q8orDNVDKPCSxBvoS'
-    )
-    .then(() => {
-      setLoading(false);
-      alert('Thank you for your message. I will get back to you soon.');
+    if (form.name != "" && form.email != "" && form.message != "") {
+      emailjs
+        .send(
+          "service_bs149tk",
+          "template_pbsf9uq",
+          {
+            from_name: form.name,
+            to_name: "Dinindu",
+            from_email: form.email,
+            to_email: "dininduchamikara1999@gmail.com",
+            message: form.message,
+          },
+          "Q8orDNVDKPCSxBvoS"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            alert("Thank you for your message. I will get back to you soon.");
 
-      setForm({
-        name: "",
-        email: "",
-        message: "",
-      })
-    }, (error) => {
-      setLoading(false);
-      console.log(error);
-      alert('Something went wrong. Please try again later.');
-    })
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+            alert("Something went wrong. Please try again later.");
+          }
+        );
+    } else {
+      alert("Please complete the required fields and try again!");
+    }
   };
 
   return (

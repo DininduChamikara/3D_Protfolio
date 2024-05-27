@@ -26,6 +26,8 @@ import csharp from "./tech/csharp.png";
 import fiver from "./company/fiverr.png";
 import playstore from "./company/playstore.png";
 import mobios from "./company/mobios.png";
+import fidenz from "./company/fidenz.png";
+import courtney from "./company/favicon.ico";
 
 import status_q from "./status_q.png";
 import dcp_mobile_apps from "./dcp_mobile_apps.png";
@@ -62,6 +64,8 @@ export {
   fiver,
   playstore,
   mobios,
+  fidenz,
+  courtney,
   status_q,
   dcp_mobile_apps,
   mobile_notekeeper,
