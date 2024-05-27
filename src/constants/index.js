@@ -1,10 +1,12 @@
 import {
   backend,
   chanuka_akash,
+  courtney,
   creator,
   csharp,
   css,
   dcp_mobile_apps,
+  fidenz,
   fiver,
   flutter,
   git,
@@ -25,7 +27,7 @@ import {
   threejs,
   typescript,
   wallart_gallery,
-  web
+  web,
 } from "../assets";
 
 export const navLinks = [
@@ -119,13 +121,37 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Engineer",
+    company_name: "Courtney Lanka (Private) Limited",
+    icon: courtney,
+    iconBg: "#000000",
+    date: "May 2024 - Present",
+    points: [
+      "Developing web applications from arcitectural design to complete web applications.",
+      "Developing web applications using React Js, Next Js, TypeScript and Tailwind CSS.",
+    ],
+  },
+  {
+    title: "Contract Trainee Software Engineer",
+    company_name: "Fidenz Technologies",
+    icon: fidenz,
+    iconBg: "#ffffff",
+    date: "Oct 2023 - Jan 2024",
+    points: [
+      "Developing web applications using React.js and other related technologies.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Develop mobile application using Flutter.",
+      "Developing backend Three Tiar Architectured web applications using .Net Core (MVC) framework",
+    ],
+  },
+  {
     title: "Freelance Web Developer",
     company_name: "Fiveer | Upwork | Truelancer",
     icon: fiver,
     iconBg: "#383E56",
     date: "Oct 2018 - Present",
     points: [
-      "Developing web applications using React.js and other related technologies.",
+      "Developing web applications using React.js, TypeScript, authentication and authorization with Auth0",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Node.js and SpringBoot backend application development with REST API implementations.",
       "Developing mobile applications using React Native.",
@@ -144,7 +170,7 @@ const experiences = [
     ],
   },
   {
-    title: "Associate Software Engineer Intern",
+    title: "Software Engineer Intern",
     company_name: "mobiOs Private Limited",
     icon: mobios,
     iconBg: "#383E56",
@@ -273,7 +299,8 @@ const projects = [
       },
     ],
     image: nic_decorder,
-    source_code_link: "https://github.com/DininduChamikara/Sri-Lanka-Nic-Decorder",
+    source_code_link:
+      "https://github.com/DininduChamikara/Sri-Lanka-Nic-Decorder",
   },
   {
     name: "WallArt Gallery",
@@ -295,4 +322,3 @@ const projects = [
 ];
 
 export { experiences, projects, services, technologies, testimonials };
-
