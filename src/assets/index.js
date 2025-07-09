@@ -28,6 +28,7 @@ import playstore from "./company/playstore.png";
 import mobios from "./company/mobios.png";
 import fidenz from "./company/fidenz.png";
 import courtney from "./company/favicon.ico";
+import codiceTech from "./company/codiceTech.jpeg";
 
 import status_q from "./status_q.png";
 import dcp_mobile_apps from "./dcp_mobile_apps.png";
@@ -66,6 +67,7 @@ export {
   mobios,
   fidenz,
   courtney,
+  codiceTech,
   status_q,
   dcp_mobile_apps,
   mobile_notekeeper,
