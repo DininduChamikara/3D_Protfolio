@@ -28,7 +28,7 @@ import playstore from "./company/playstore.png";
 import mobios from "./company/mobios.png";
 import fidenz from "./company/fidenz.png";
 import courtney from "./company/favicon.ico";
-import codiceTech from "./company/codiceTech.jpeg";
+import codiceTech from "./company/codicetech.jpeg";
 
 import status_q from "./status_q.png";
 import dcp_mobile_apps from "./dcp_mobile_apps.png";
