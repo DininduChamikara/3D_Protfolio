@@ -2,6 +2,7 @@ import {
   backend,
   chanuka_akash,
   courtney,
+  codiceTech,
   creator,
   csharp,
   css,
@@ -121,11 +122,25 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Engineer",
+    title: "Software Engineer (Remote)",
+    company_name: "CODICE",
+    icon: codiceTech,
+    iconBg: "#fff",
+    date: "July 2024 - Present",
+    points: [
+      "Developing user friendly web application using React Js with TypeScript based on the client's requirements.",
+      "Developing fast and secure backend web applications using .Net and Node Js based on Micro Services Architecture.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Software Engineer (Remote)",
     company_name: "Courtney Lanka (Private) Limited",
     icon: courtney,
     iconBg: "#000000",
-    date: "May 2024 - Present",
+    date: "May 2024 - July 2024",
     points: [
       "Developing web applications from arcitectural design to complete web applications.",
       "Developing web applications using React Js, Next Js, TypeScript and Tailwind CSS.",
